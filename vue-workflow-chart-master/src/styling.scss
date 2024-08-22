@@ -1,0 +1,58 @@
+$background-color: white;
+$text-color: #11353D;
+$default-font-family: "Open Sans" !default;
+$default-font-size: 14px;
+$arrow-color: #84878a;
+$arrow-stroke-width: 1;
+$marker-definition: url(#markerArrow);
+
+.vue-workflow-chart-state {
+  background-color: $background-color;
+  padding: 20px;
+  border-radius: 3px;
+  color: $text-color;
+  font: {
+    size: $default-font-size;
+    family: $default-font-family;
+    weight: 600
+  }
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.20);
+  }
+}
+
+.vue-workflow-chart-transition-label {
+  background-color: $background-color;
+  padding: 1px;
+  font: {
+    size: $default-font-size;
+    family: $default-font-family;
+    weight: 400
+  }
+  color: #56676b;
+  max-width: 100px;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
+  }
+}
+
+.vue-workflow-chart-transition-arrow {
+  fill: $arrow-color;
+  stroke-width: $arrow-stroke-width;
+  stroke: none;
+}
+.vue-workflow-chart-transition-path {
+  fill: none;
+  stroke: $arrow-color;
+  stroke-width: 3;
+}
+
